@@ -1,9 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Welcome</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Homepage - Xuan Wei</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .profile-photo {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Hello, GitHub Pages!</h1>
+    <header>
+        <h1>Xuan Wei, Ph.D.</h1>
+        <p>Associate Professor, Shanghai Jiao Tong University</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="content">
+            <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
+            <p>
+                I am an Associate Professor at Shanghai Jiao Tong University, specializing in management science, data analysis, and artificial intelligence applications. My research focuses on optimizing productivity, recommendation systems, and analyzing user behavior in online platforms.
+            </p>
+        </div>
+    </section>
+
+    <section id="research">
+        <h2>Research Areas</h2>
+        <ul>
+            <li>Recommendation Systems and Bias Mitigation</li>
+            <li>Large Language Models and Human-AI Collaboration</li>
+            <li>Digital Platform Optimization and Information Ecology</li>
+            <li>Behavioral Complexity and Decision Making</li>
+        </ul>
+    </section>
+
+    <section id="teaching">
+        <h2>Teaching</h2>
+        <p>
+            I have been teaching at the university level for over three years, with excellent student evaluations. Courses I teach include:
+        </p>
+        <ul>
+            <li>Computational Text Analysis</li>
+            <li>Data Science and Business Analytics</li>
+            <li>Management Theories and Methods</li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h2>Selected Publications</h2>
+        <ul>
+            <li><strong>"Unsupervised Anomaly Detection on Attributed Multiplex Heterogeneous Networks"</strong> - Published in <em>Journal of AI Research</em>.</li>
+            <li><strong>"Beyond The Financial Value: How Crowdfunding Predicts Market Performance"</strong> - A study using Kickstarter data.</li>
+            <li><strong>"Sunk Cost Fallacy, Price Adjustment, and Subscription Service"</strong> - Examining behavioral economics in subscription services.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            <strong>Email:</strong> xuan.wei@sjtu.edu.cn<br>
+            <strong>GitHub:</strong> <a href="https://github.com/username" target="_blank">https://github.com/username</a><br>
+            <strong>Office:</strong> Room 123, Shanghai Jiao Tong University
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Xuan Wei. All rights reserved.</p>
+    </footer>
 </body>
 </html>
