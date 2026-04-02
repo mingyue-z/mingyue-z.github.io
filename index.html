@@ -1,240 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Homepage - Mingyue Zhang</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav {
-            background: #444;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 20px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .profile-photo {
-            max-width: 150px;
-            border-radius: 50%;
-        }
-        .content {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张明月 | 个人主页</title>
+  <meta name="description" content="张明月个人主页，包含个人简介、研究兴趣、工作经历、教育背景与获奖信息。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Mingyue Zhang, Ph.D.</h1>
-        <p>Associate Professor, Shanghai International Studies University</p>
-    </header>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">
+          <img src="profile-photo.jpeg" alt="张明月头像">
+        </span>
+        <span class="brand-text">
+          <strong>张明月</strong>
+          <span>副教授 · 博士生导师</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a class="active" href="index.html">个人简介</a>
+        <a href="research.html">科研工作</a>
+        <a href="teaching.html">教学工作</a>
+      </nav>
+    </div>
+  </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <main>
+    <section class="about-hero">
+      <div class="container about-hero-grid">
+        <div class="about-photo-panel">
+          <div class="photo-frame">
+            <img src="profile-photo.jpeg" alt="张明月个人照片">
+          </div>
+          <div class="email-card">
+            <h3>
+              <span>上海外国语大学</span>
+              <span>国际工商管理学院</span>
+            </h3>
+            <p class="contact-role">副教授 · 博士生导师</p>
+            <a href="mailto:zhangmy@shisu.edu.cn">zhangmy@shisu.edu.cn</a>
+          </div>
+        </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="content">
-            <img src="profile.jpeg" alt="Profile Photo" class="profile-photo">
+        <div class="about-intro-panel">
+          <p class="section-heading">个人简介</p>
+          <p class="lead">
+            张明月，上海外国语大学国际工商管理学院信息管理与决策科学系副教授、博士生导师，入选上海市东方英才计划青年项目。先后在北京理工大学、清华大学分别取得学士学位和管理学博士学位。主要从事数字平台治理、在线社区与激励机制、人机协同与群体智慧、生成式AI
+            赋能下的数字服务与用户行为等方向研究，关注数字经济与管理实践中的现实问题。
+          </p>
+          <p>
+            近年来主持国家自然科学基金面上项目和青年项目，在
+            <em>MIS Quarterly</em>、<em>INFORMS Journal on Computing</em>、<em>Decision Sciences</em>、
+            <em>Journal of the Association for Information Systems</em>、<em>ACM Transactions on Knowledge Discovery from Data</em>
+            等期刊发表多篇论文，获国家级教学成果奖等荣誉。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="research.html">查看科研工作</a>
+            <a class="button secondary" href="teaching.html">查看教学工作</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-heading">当前关注的研究主题</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>人机协同与群体智慧</h3>
             <p>
-                I am an Associate Professor in School of Business and Management at Shanghai International Studies University.
-                My research interests focus on human-AI collaboration, online communities, incentive mechinism in UGC platforms, and product recommendations. 
-                Recent publications include papers in MIS Quarterly, Decision Sciences, ACM Transactions on Knowledge Discovery from Data (TKDD), Decision Support Systems, Information & Management etc.
-               
+              聚焦生成式AI背景下的人机协同场景中的判断整合、众包协作与群体智慧机制，关注算法系统与人的认知优势如何互补，并提升信息识别、内容生成与决策支持的质量。
             </p>
+          </article>
+          <article class="card">
+            <h3>知识社区的激励机制与平台治理</h3>
+            <p>
+              关注知识付费、知识共享与在线问答社区中的激励设计、内容贡献与平台治理问题，研究平台规则、信息披露和制度安排如何塑造用户参与和社区生态。
+            </p>
+          </article>
+          <article class="card">
+            <h3>数字服务中的偏差问题</h3>
+            <p>
+              研究数字服务场景中的认知偏差、平台偏差与算法偏差，尤其关注推荐系统、订阅服务、位置披露与外观线索等因素如何影响用户判断、选择与互动行为。
+            </p>
+          </article>
         </div>
-
-        <h3>Employment</h3>
-        <div class="content">
-            <ul>
-                <li>2020.01 ~ Present, Shanghai International Studies University, Associate Professor</li>
-                <li>2017.07 ~ 2019.12, Beijing Foreign Studies University, Assistant Professor </li>
-            </ul>  
-        </div>
-
-        <h3>Education</h3>
-        <div class="content">
-            <ul>
-                <li>2012.09 ~ 2017.07, <strong>Tsinghua University</strong>, Ph.D. in School of Ecnomomics and Management, Supervisor: Guoqing Chen </li>
-                <li>2015.08 ~ 2016.08, <strong>University of Arizona</strong>, Visiting Scholar in MIS, Eller College of Management, Collaborator: Jesse Bockstedt, Paulo Goes</li>
-                <li>2008.09 ~ 2012.07, <strong>Beijing Institute of Technology</strong>, B.S. in Information Management and Systems, School of Management and Economics </li> 
-            </ul>  
-        </div>
+      </div>
     </section>
 
-    
+    <section class="section muted">
+      <div class="container about-details-grid">
+        <article class="info-panel">
+          <p class="section-heading">工作经历</p>
+          <div class="detail-list">
+            <article class="detail-item">
+              <span class="detail-meta">2020.01 至今</span>
+              <div class="detail-body">
+                <h3>上海外国语大学，国际工商管理学院</h3>
+                <p>副教授、博士生导师</p>
+              </div>
+            </article>
+            <article class="detail-item">
+              <span class="detail-meta">2017.07 - 2019.12</span>
+              <div class="detail-body">
+                <h3>北京外国语大学，国际商学院</h3>
+                <p>助理教授</p>
+              </div>
+            </article>
+          </div>
+        </article>
+
+        <article class="info-panel">
+          <p class="section-heading">教育背景</p>
+          <div class="detail-list">
+            <article class="detail-item">
+              <span class="detail-meta">2012.09 - 2017.07</span>
+              <div class="detail-body">
+                <h3>清华大学，经济管理学院</h3>
+                <p>管理学博士（管理科学与工程系）</p>
+              </div>
+            </article>
+            <article class="detail-item">
+              <span class="detail-meta">2015.08 - 2016.08</span>
+              <div class="detail-body">
+                <h3>University of Arizona, Eller College of Management</h3>
+                <p>联合培养博士生（Department of MIS）</p>
+              </div>
+            </article>
+            <article class="detail-item">
+              <span class="detail-meta">2008.09 - 2012.07</span>
+              <div class="detail-body">
+                <h3>北京理工大学，管理与经济学院</h3>
+                <p>管理学学士（信息管理与信息系统专业）</p>
+              </div>
+            </article>
+          </div>
+        </article>
+      </div>
     </section>
-    <section id="research">
-        <h2>Research</h2>
-        <h3>Research Areas</h3>
-        <ul>
-            <li>Human-AI Collaboration</li>
-            <li>Digital Platform and Incentive Mechanisms </li>
-            <li>Recommendation Systems and Bias Mitigation</li>
-        </ul>
 
-        <h3>Research Methodology</h3>
-        <ul>
-            <li>Econometrics</li>
-            <li>Lab Experiment</li>
-            <li>Machine Learning</li>
-        </ul>
-
-        <h3>Journal Publications</h3> (*corresponding author)
-        <ul>
-            <li>
-                <strong>Zhang, M.</strong>, Bockstedt, J., Song, T.*, & Wei, X. (2024), “Sunk Cost Fallacy, 
-                Price Adjustment, and Subscription Service”, <em>Journal of the Association for Information Systems</em>, forthcoming.
-            </li>
-            <li>
-                <strong>Zhang, M.</strong>, Zhu, T., Xu, Y., & Ma, B.* (2023), “Zero is Hero: 
-                Round number effects in Knowledge Sharing Platforms”, <em>Information & Management</em>, 60(6): 103833.
-            </li>
-            <li>
-                Guo, X., Wang, L., <strong>Zhang, M.*</strong>, & Chen, G. (2023), “First Things First? Order
-                Effects in Online Product Recommender Systems”, <em>ACM Transactions on Computer-Human
-                Interaction</em>, 30(1): 1-35. 
-            </li>
-            <li>
-                Wei, X., Zhang, Z.*, <strong>Zhang, M.*</strong>, Chen, W., & Zeng, D. D. (2022), “Combining 
-                Crowd and Machine Intelligence to Detect False News in Social Media”, <em>MIS Quarterly</em>, 46(2): 977-1008.
-            </li>
-            <li>
-                <strong>Zhang, M.*</strong>, & Bockstedt, J. (2020), “Complements and Substitutes in Online Product
-                Recommendations: The Differential Effects on Consumers’ Willingness to pay”, <em>Information &
-                Management</em>, 57(6): 1-19 .
-            </li>
-            <li>
-                <strong>Zhang, M.</strong>, Wei, X.*, & Zeng, D. D. (2020), “A Matter of Reevaluation: Incentivizing 
-                Users to Contribute Reviews in Online Platforms”, <em>Decision Support Systems</em>, 128: 113158.
-            </li>
-            <li>
-                <strong>Zhang, M.</strong>, Wei, X., Guo, X.*, & Chen, G., & Wei, Q. (2019), “Identifying the
-                Complements and Substitutes of Products: A Neural Network Framework Based on Product
-                Embedding”, <em>ACM Transactions on Knowledge Discovery from Data (TKDD)</em>, 13(3): 1-29.
-            </li>
-            <li>
-                Zhang, J., Zhang, J., & <strong>Zhang, M.*</strong> (2019), “From Free to Paid: Customer Expertise and 
-                Customer Satisfaction on Knowledge Payment Platform”, <em>Decision Support Systems</em>, 127: 113140
-            </li>
-            <li>
-                <strong>Zhang, M.</strong>, Wei, X., & Chen, G.* (2018), “Maximizing the Influence in Social Networks 
-                via Holistic Probability Maximization”, <em>International Journal of Intelligent Systems</em>, 33(10): 2038-2057.
-            </li>
-            <li>
-                Chen, G., Wang, C., <strong>Zhang, M.*</strong>, Wei, Q., & Ma, B. (2018), “How 'Small' 
-                Reflects 'Big'? – Representative Information Measurement and Extraction”, <em>Information Sciences</em>, 460:519-540.
-            </li>
-            <li>
-                <strong>Zhang, M.</strong>, Guo, X.*, & Chen, G. (2016), “Prediction Uncertainty in Collaborative 
-                Filtering: Enhancing Personalized Online Product Ranking”, <em>Decision Support Systems</em>, 83: 10-21.
-            </li>
-            <li>
-                Wang, H., Guo, X.*, <strong>Zhang, M.</strong>, Wei, Q., & Chen, G. (2016), “Predicting
-                the Incremental Benefits of Online Information Search for Heterogeneous Consumers”, <em>Decision Sciences</em>, 47(5): 957-988.
-            </li>
-            <li>
-                Chen, Z., Gong, C., Lin, L., Xu, S., <strong>Zhang, M.</strong>, & Zhou, X. (2015), 
-                “Assessing Junior Faculty Research Productivity in the IS Field: Recommendations for Promotion 
-                and Tenure Standards for Asian Schools”, <em>Communications of the Association for Information Systems</em>, 36(1): 357-368.
-            </li>
-
+    <section class="section">
+      <div class="container award-grid">
+        <article class="info-panel">
+          <p class="section-heading">科研获奖</p>
+          <div class="award-list" data-collapsible-list data-visible-count="4">
+            <article class="award-item">
+              <span class="award-date">2025.12</span>
+              <p>上海外国语大学教育奖励基金教学科研奖</p>
+            </article>
+            <article class="award-item">
+              <span class="award-date">2025.11</span>
+              <p>中国信息经济学会创新论文奖</p>
+            </article>
+            <article class="award-item">
+              <span class="award-date">2025.08</span>
+              <p>上海市哲学社会科学学科学术优秀成果奖一等奖（论文类）</p>
+            </article>
+            <article class="award-item">
+              <span class="award-date">2025.07</span>
+              <p>AIS Special Interest Group on Information Systems in Asia Pacific Best Paper Award</p>
+            </article>
+           <article class="award-item">
+              <span class="award-date">2023.05</span>
+              <p>第22届武汉国际电子商务会议（WHICEB）最佳论文提名奖</p>
+            </article>
+            <article class="award-item">
+              <span class="award-date">2022.12</span>
+              <p>上海外国语大学教育奖励基金教学科研奖</p>
+            </article>
+            <article class="award-item">
+              <span class="award-date">2021.12</span>
+              <p>上海外国语大学优秀科研成果奖</p>
+            </article>
+            <article class="award-item">
+              <span class="award-date">2021.10</span>
+              <p>中国系统工程学会信息系统工程专业委员会（CNAIS）最佳论文奖</p>
+            </article>
+            <article class="award-item">
+              <span class="award-date">2021.01</span>
+              <p>《管理世界》2020年“十佳”优秀论文</p>
+            </article>
+            <article class="award-item">
+              <span class="award-date">2020.11</span>
+              <p>中国计算机学会协同计算专业委员会（CCF TCCC）最佳论文奖</p>
+            </article>
+          
+          
             
-        </ul>
+          </div>
+          <button class="toggle-more" type="button" data-toggle-list aria-expanded="false">查看更多</button>
+        </article>
 
-        <h3>Working Papers</h3>
-        <ul>
-            <li>To be updated.</li>
-        </ul>
-        <!-- <ul>
-            <li>"AI-centered vs. Human-centered: Exploring Users' Behavioral Intentions toward AI-Generated Content in Varying Forms 
-                of Human-AI Collaboration" (with <em>Yu Xu, Xuan Wei, and Han Zhang</em>)</li>
-            <li>"Does Beauty Bias Exist in Professional Service? — A Study of Online Cosmetic Platforms Based on Match-up Hypothesis" 
-                (with <em>Hui Yuan, and Baojun Ma</em>)</li>
-            <li>"Human-Algorithm Collaborative Truth Inference in Crowdsourcing" (with <em> Xuan Wei, Qingpeng Zhang, Zhi Li, and Daniel Dajun Zeng</em>)</li>
-            <li>"Location Disclosure and Hostile Speech" (with <em>Xuan Wei, Jiayu Yao, Wei Chen, and Karen Xie</em>)</li>
-            <li>"Answers are Wanted: The Role of Bounty Amount and Temporal Scarcity on Knowledge Contribution"
-                (with <em>Min Yu, and Baojun Ma</em>)
-            </li>
-        </ul> -->
-
-        <h3>Conferences and Workshops</h3>
-        <ul>
-            <li>To be updated.</li>
-        </ul>
-
-
+        <article class="info-panel">
+          <p class="section-heading">教学获奖</p>
+          <div class="award-list" data-collapsible-list data-visible-count="4">
+            <article class="award-item">
+              <span class="award-date">2024 / 2022 / 2020</span>
+              <p>上海外国语大学工作考核优秀</p>
+            </article>
+            <article class="award-item">
+              <span class="award-date">2023.07</span>
+              <p>国家级教学成果奖二等奖</p>
+            </article>
+            <article class="award-item">
+              <span class="award-date">2023.04</span>
+              <p>全国大学生市场调查与分析大赛上海市二等奖，指导教师</p>
+            </article>
+            <article class="award-item">
+              <span class="award-date">2022.10</span>
+              <p>上海市优秀教学成果一等奖</p>
+            </article>
+            <article class="award-item">
+              <span class="award-date">2021.11</span>
+              <p>上海外国语大学校级本科毕业论文优秀指导教师</p>
+            </article>
+            <article class="award-item">
+              <span class="award-date">2020.12</span>
+              <p>上海高校青年教师教学竞赛三等奖</p>
+            </article>
+           
+            <article class="award-item">
+              <span class="award-date">2019.05</span>
+              <p>北京外国语大学青年教师教学基本功二等奖、最佳教案奖</p>
+            </article>
+          </div>
+          <button class="toggle-more" type="button" data-toggle-list aria-expanded="false">查看更多</button>
+        </article>
+      </div>
     </section>
+  </main>
 
-    <section id="teaching">
-        <h2>Teaching</h2>
-        <p>
-            I have been teaching at the university level for over seven years, with excellent student evaluations. Courses I teach include:
-        </p>
-        <ul>
-            <li>Python Programming</li>
-            <li>Database</li>
-            <li>Digital Marketing</li>
-            <li>Business Intelligence</li>
-            <li>Data Mining</li>
-            <li>Probability and Statistics</li>
-            <li>Big Data and Tech Trends</li>
-            <li>Quantitative Methods for Business</li>
-        </ul>
-    </section>
-
-    
-        
-   
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            <strong>Email:</strong> zhangmy@shisu.edu.cn<br>
-            <strong>University Profile:</strong> <a href="http://www.sbm.shisu.edu.cn/zmy/list.htm" target="_blank">http://www.sbm.shisu.edu.cn/zmy/list.htm</a><br>
-        </p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Mingyue Zhang. All rights reserved.</p>
-    </footer>
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 张明月. 基于 GitHub Pages 构建。</p>
+      <div class="footer-links">
+        <a href="research.html">科研工作</a>
+        <a href="teaching.html">教学工作</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
