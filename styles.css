@@ -132,6 +132,13 @@ p {
   transform: translateY(-1px);
 }
 
+.site-nav .language-switch {
+  margin-left: 0.35rem;
+  border: 1px solid rgba(23, 56, 77, 0.2);
+  color: var(--ink-blue);
+  font-weight: 700;
+}
+
 .nav-toggle {
   display: none;
   border: 0;
@@ -1122,6 +1129,11 @@ p {
 
   .site-nav.open {
     display: flex;
+  }
+
+  .site-nav .language-switch {
+    margin-left: 0;
+    text-align: center;
   }
 
   .nav-toggle {
