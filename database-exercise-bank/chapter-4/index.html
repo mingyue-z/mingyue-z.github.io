@@ -1,0 +1,88 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="张明月《数据库原理与应用》课程习题库"><title>第4章 关系规范化理论｜数据库习题库</title><link rel="stylesheet" href="../styles.css"><script src="../script.js" defer></script></head><body><header class="site-header"><a class="brand" href="../index.html"><span class="brand-mark">DB</span><span><strong>数据库习题库</strong><small>张明月《数据库原理与应用》课程</small></span></a><nav><a href="../index.html">题库目录</a><a href="https://mingyue-z.github.io/">个人主页 ↗</a></nav></header><section class="chapter-hero"><div><a class="back" href="../index.html">← 返回题库目录</a><p class="eyebrow">CHAPTER 04 · EXERCISES</p><h1>第4章<br><span>关系规范化理论</span></h1><p>本页依据课程配套的第4章课后习题答案文档整理，共收录 14 组教材习题。题目默认不显示答案，请先独立思考，再展开核对。</p></div><div class="chapter-stat"><strong>14</strong><span>组教材习题</span><small>题目与答案按原文顺序排列</small></div></section>
+        <main class="chapter-content"><div class="toolbar"><div><p class="eyebrow">PRACTICE</p><h2>本章习题</h2><span id="result-count">共 14 组</span></div><label class="search"><span>⌕</span><input id="search" type="search" placeholder="搜索题号或关键词…" aria-label="搜索题目"></label></div><div id="questions"><article class="question-card" data-search="4.1 、下表给出的关系R为第几范式？是否存在操作异常？若存在，则将其分解为 、下表给出的关系R为第几范式？是否存在操作异常？若存在，则将其分解为高一级范式。分解完成的高级范式中是否可以避免分解前关系中存在的操作异常？">
+          <div class="question-no">4.1</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span></div>
+          <h3>、下表给出的关系R为第几范式？是否存在操作异常？若存在，则将其分解为</h3><div class="prompt"><div class="prose">、下表给出的关系R为第几范式？是否存在操作异常？若存在，则将其分解为高一级范式。分解完成的高级范式中是否可以避免分解前关系中存在的操作异常？</div></div>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">解：它为1NF。因为该关系的候选码为（工程号，材料号），而非主属性“开工日期”和“完工日期”部分函数依赖于候选码的子集“工程号”，即：<br><br>∴它不是2NF。<br><br>它存在操作异常，如果工程项目确定后，若暂时未用到材料，则该工程的数据因缺少码的一部分（材料号）而不能进入到数据库中，出现插入异常。若某工程下马，则删去该工程的操作也可能丢失材料方面的信息。<br><br>将其中的部分函数依赖分解为一个独立的关系，则产生如下所示的两个2NF关系模式：<br><br>R1（工程号，材料号，数量，价格）<br><br>R2(工程号，开工日期，完工日期)<br><br>分解后，新工程确定后，尽管还未用到材料，该工程数据可在关系R2中插入。某工程数据删除时，仅对关系R2操作，也不会丢失材料方面的信息。</div></div>
+          </div></article><article class="question-card" data-search="4.2 教材习题 4.2 源文档仅提供了教材习题 4.2 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。">
+          <div class="question-no">4.2</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span><span class="missing">题干待补充</span></div>
+          <h3>教材习题 4.2</h3><div class="prompt"><div class="prose">源文档仅提供了教材习题 4.2 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。</div></div><p class="source-note">提示：答案文档未收录本题题干，请对照教材原题。</p>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">D+={DHG}</div></div>
+          </div></article><article class="question-card" data-search="4.3 教材习题 4.3 源文档仅提供了教材习题 4.3 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。">
+          <div class="question-no">4.3</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span><span class="missing">题干待补充</span></div>
+          <h3>教材习题 4.3</h3><div class="prompt"><div class="prose">源文档仅提供了教材习题 4.3 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。</div></div><p class="source-note">提示：答案文档未收录本题题干，请对照教材原题。</p>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">F中A+=ABCDE CD+=CDE<br><br>G中 A+=ABCDE CD+=CDE据此，可以得知F中每个函数依赖均在G+中，G中每个函数依赖均在F+中（具体描述略），所以F=G</div></div>
+          </div></article><article class="question-card" data-search="4.4 教材习题 4.4 源文档仅提供了教材习题 4.4 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。">
+          <div class="question-no">4.4</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span><span class="missing">题干待补充</span></div>
+          <h3>教材习题 4.4</h3><div class="prompt"><div class="prose">源文档仅提供了教材习题 4.4 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。</div></div><p class="source-note">提示：答案文档未收录本题题干，请对照教材原题。</p>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">ACD+=ABCD=U并且对于ACD的任一真子集的闭包均不等于U所以ACD为候选码</div></div>
+          </div></article><article class="question-card" data-search="4.5 教材习题 4.5 源文档仅提供了教材习题 4.5 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。">
+          <div class="question-no">4.5</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span><span class="missing">题干待补充</span></div>
+          <h3>教材习题 4.5</h3><div class="prompt"><div class="prose">源文档仅提供了教材习题 4.5 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。</div></div><p class="source-note">提示：答案文档未收录本题题干，请对照教材原题。</p>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">(1)AB+=ABCD<br><br>AC+=ACD<br><br>DE+=ABCDE<br><br>⑵ 求R的所有候选码BE，CE，DE<br><br>⑶ 求F的最小覆盖<br><br>Fm={B→C，DE→B，C→D，D→A}</div></div>
+          </div></article><article class="question-card" data-search="4.6 教材习题 4.6 源文档仅提供了教材习题 4.6 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。">
+          <div class="question-no">4.6</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span><span class="missing">题干待补充</span></div>
+          <h3>教材习题 4.6</h3><div class="prompt"><div class="prose">源文档仅提供了教材习题 4.6 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。</div></div><p class="source-note">提示：答案文档未收录本题题干，请对照教材原题。</p>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">Fm={A→C，C→A，B→C，D→C}</div></div>
+          </div></article><article class="question-card" data-search="4.7 教材习题 4.7 源文档仅提供了教材习题 4.7 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。">
+          <div class="question-no">4.7</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span><span class="missing">题干待补充</span></div>
+          <h3>教材习题 4.7</h3><div class="prompt"><div class="prose">源文档仅提供了教材习题 4.7 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。</div></div><p class="source-note">提示：答案文档未收录本题题干，请对照教材原题。</p>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">不具有</div></div>
+          </div></article><article class="question-card" data-search="4.8 教材习题 4.8 源文档仅提供了教材习题 4.8 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。">
+          <div class="question-no">4.8</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span><span class="missing">题干待补充</span></div>
+          <h3>教材习题 4.8</h3><div class="prompt"><div class="prose">源文档仅提供了教材习题 4.8 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。</div></div><p class="source-note">提示：答案文档未收录本题题干，请对照教材原题。</p>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">均不具有</div></div>
+          </div></article><article class="question-card" data-search="4.9 教材习题 4.9 源文档仅提供了教材习题 4.9 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。">
+          <div class="question-no">4.9</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span><span class="missing">题干待补充</span></div>
+          <h3>教材习题 4.9</h3><div class="prompt"><div class="prose">源文档仅提供了教材习题 4.9 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。</div></div><p class="source-note">提示：答案文档未收录本题题干，请对照教材原题。</p>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">F={BC,DA}ρ={AD,BC}<br><br>KEY=BD,有损分解，保持依赖，均属于BCNF<br><br>F={ ABC,CA, CD }ρ={ACD,BC}<br><br>KEY=AB,BC,无损分解，依赖不保持，均属于BCNF<br><br>F={ ABC,CAD }ρ={ABC, AD}<br><br>KEY=A,C,无损分解，依赖保持，均属于BCNF<br><br>F={ AB, BC, CD }ρ={ACD,AB}<br><br>KEY=A,无损分解，依赖不保持，AB属于BCNF，ACD属于2NF<br><br>F={ AB, BC, CD }ρ={AD,AB,CD}<br><br>KEY=A,有损分解，依赖不保持，均属于BC范式<br><br>F={ ABC,CA, DA }ρ={ACD,BC}<br><br>KEY=AB,BC,无损分解，依赖不保持，均属于BCNF</div></div>
+          </div></article><article class="question-card" data-search="4.10 教材习题 4.10 源文档仅提供了教材习题 4.10 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。">
+          <div class="question-no">4.10</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span><span class="missing">题干待补充</span></div>
+          <h3>教材习题 4.10</h3><div class="prompt"><div class="prose">源文档仅提供了教材习题 4.10 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。</div></div><p class="source-note">提示：答案文档未收录本题题干，请对照教材原题。</p>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">具有无损连接性<br><br>（1）候选码：AB<br><br>（2）Fmin={ AB→C，C→D，D→E }<br><br>(3) ρ＝{R1（ABC），R2（CD），R3（DE）}</div></div>
+          </div></article><article class="question-card" data-search="4.11 教材习题 4.11 源文档仅提供了教材习题 4.11 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。">
+          <div class="question-no">4.11</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span><span class="missing">题干待补充</span></div>
+          <h3>教材习题 4.11</h3><div class="prompt"><div class="prose">源文档仅提供了教材习题 4.11 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。</div></div><p class="source-note">提示：答案文档未收录本题题干，请对照教材原题。</p>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">Fm={ABC BEC CABDEG}</div></div>
+          </div></article><article class="question-card" data-search="4.12 教材习题 4.12 源文档仅提供了教材习题 4.12 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。">
+          <div class="question-no">4.12</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span><span class="missing">题干待补充</span></div>
+          <h3>教材习题 4.12</h3><div class="prompt"><div class="prose">源文档仅提供了教材习题 4.12 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。</div></div><p class="source-note">提示：答案文档未收录本题题干，请对照教材原题。</p>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">（1）函数依赖<br><br></div><figure><img src="../assets/chapter-4/image2.png" alt="教材习题示意图" loading="lazy"></figure><div class="prose"><br><br>候选码：（职工名，项目名）<br><br>由于部门名，部门经理部分函数依赖于码，因此该模式只满足第一范式，所以采用投影分解法将一个 1NF 的关系分解为多个 2NF 的关系，即：SLC 分解 为两个关系模式，以消除这些部分函数依赖<br><br>R1（职工名，项目名，工资） ∈ 2NF<br><br>R2（项目名，部门号，部门名，部门经理） ∈ 2NF<br><br>但是 2NF 关系模式 R2 中，部门名和部门经理传递函数依赖于项目名，即 R2 中 存在非主属性对码的传递函数依赖。所以进一步把 SL 分解为两个关系模式，以 消除传递函数依赖：<br><br>R2（项目名，部门号） ∈ 3NF<br><br>R3（部门号，部门名，部门经理） ∈ 3NF</div></div>
+          </div></article><article class="question-card" data-search="4.13 教材习题 4.13 源文档仅提供了教材习题 4.13 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。">
+          <div class="question-no">4.13</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span><span class="missing">题干待补充</span></div>
+          <h3>教材习题 4.13</h3><div class="prompt"><div class="prose">源文档仅提供了教材习题 4.13 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。</div></div><p class="source-note">提示：答案文档未收录本题题干，请对照教材原题。</p>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">解：因为关系模式至少是1NF关系，即不包含重复组并且不存在嵌套结构，给出的数据集显然不可直接作为关系数据库中的关系，改造为1NF的关系如下。<br><br></div><div class="table-wrap"><table><thead><tr><th>系名</th><th>课程名</th><th>教师名</th></tr></thead><tbody><tr><td>计算机系</td><td>DB</td><td>张伟</td></tr><tr><td>计算机系</td><td>DB</td><td>王强</td></tr><tr><td>信控系</td><td>AI</td><td>孙兰</td></tr><tr><td>信控系</td><td>AI</td><td>宋灵</td></tr><tr><td>信息安全系</td><td>DS</td><td>张燕</td></tr><tr><td>信息安全系</td><td>DS</td><td>李杰</td></tr><tr><td>数学系</td><td>CM</td><td>刘海</td></tr></tbody></table></div></div>
+          </div></article><article class="question-card" data-search="4.14 教材习题 4.14 源文档仅提供了教材习题 4.14 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。">
+          <div class="question-no">4.14</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span><span class="missing">题干待补充</span></div>
+          <h3>教材习题 4.14</h3><div class="prompt"><div class="prose">源文档仅提供了教材习题 4.14 的答案，未收录该题题干。请对照教材中的原题完成后，再展开参考答案核对。</div></div><p class="source-note">提示：答案文档未收录本题题干，请对照教材原题。</p>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">解：各关系模式如下：<br><br>学生(学号,姓名,出生年月,系名,班级号,宿舍区)<br><br>班级(班级号,专业名,系名,人数,入校年份)<br><br>系(系名,系号,系办公地点,人数)<br><br>社团(社团名,成立年份,地点,人数)<br><br>加入社团（社团名，学号，学生参加社团的年份）<br><br>学生(学号,姓名,出生年月,系名,班级号,宿舍区)<br><br>“学生”关系的最小函数依赖集为：<br><br>Fmin={学号→姓名,学号→班级号,学号→出生年月,学号→系名，系名→宿舍区}<br><br>以上关系模式中存在传递函数依赖，如:学号→系名，系名→宿舍区<br><br>候选键是学号,外部键是班级号,系名。<br><br>班级(班级号,专业名,系名,人数,入校年份)<br><br>“班级”关系的最小函数依赖集为：<br><br>Fmin={(系名,专业名)→班级号,班级号→人数，班级号→入校年份，班级号→系名，班级号→专业名}<br><br>(假设没有相同的系，不同系中专业名可以相同)<br><br>以上关系模式中不存在传递函数依赖。<br><br>“(系名,专业名)→班级号”是完全函数依赖。<br><br>候选键是(系名,专业名),班级号，外部键是系名。<br><br>系(系名,系号,系办公地点,人数)<br><br>“系”关系的最小函数依赖集为： Fmin={系号→系名,系名→系办公地点,系名→人数，系名→系号}<br><br>以上关系模式中不存在传递函数依赖<br><br>候选键是系名,系号<br><br>社团(社团名,成立年份,地点,人数)<br><br>“社团”关系的最小函数依赖集为： Fmin={社团名→成立年份,社团名→地点,社团名→人数}<br><br>以上关系模式中不存在传递函数依赖。<br><br>候选键是社团名<br><br>加入社团（社团名，学号，学生参加社团的年份）<br><br>“加入社团”关系的最小函数依赖集为： Fmin={（社团名，学号）→学生参加社团的年份}<br><br>“（社团名，学号）→学生参加社团的年份”是完全函数依赖。<br><br>以上关系模式中不存在传递函数依赖。<br><br>候选键是（社团名，学号）。</div></div>
+          </div></article></div></main>
+        <section class="advice"><span>学习建议</span><h2>先作答，再核对。</h2><p>参考答案用于理解思路与检查结果；遇到题干待补充的题目，请结合教材原题使用。</p><a href="#">回到顶部 ↑</a></section>
+        <footer><strong>张明月《数据库原理与应用》</strong><span>第4章 · 关系规范化理论</span><a href="https://mingyue-z.github.io/">返回个人主页 ↗</a></footer></body></html>

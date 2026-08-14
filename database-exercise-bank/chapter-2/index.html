@@ -1,0 +1,137 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="张明月《数据库原理与应用》课程习题库"><title>第2章 关系模型与关系代数｜数据库习题库</title><link rel="stylesheet" href="../styles.css"><script src="../script.js" defer></script></head><body><header class="site-header"><a class="brand" href="../index.html"><span class="brand-mark">DB</span><span><strong>数据库习题库</strong><small>张明月《数据库原理与应用》课程</small></span></a><nav><a href="../index.html">题库目录</a><a href="https://mingyue-z.github.io/">个人主页 ↗</a></nav></header><section class="chapter-hero"><div><a class="back" href="../index.html">← 返回题库目录</a><p class="eyebrow">CHAPTER 02 · EXERCISES</p><h1>第2章<br><span>关系模型与关系代数</span></h1><p>本页依据课程配套的第2章课后习题答案文档整理，共收录 13 组教材习题。题目默认不显示答案，请先独立思考，再展开核对。</p></div><div class="chapter-stat"><strong>13</strong><span>组教材习题</span><small>题目与答案按原文顺序排列</small></div></section>
+        <main class="chapter-content"><div class="toolbar"><div><p class="eyebrow">PRACTICE</p><h2>本章习题</h2><span id="result-count">共 13 组</span></div><label class="search"><span>⌕</span><input id="search" type="search" placeholder="搜索题号或关键词…" aria-label="搜索题目"></label></div><div id="questions"><article class="question-card" data-search="2.1 试述关系模型的三个组成部分。 试述关系模型的三个组成部分。">
+          <div class="question-no">2.1</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span></div>
+          <h3>试述关系模型的三个组成部分。</h3><div class="prompt"><div class="prose">试述关系模型的三个组成部分。</div></div>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">答：关系模型由关系数据结构、关系数据操作和关系完整性约束三部分组成。</div></div>
+          </div></article><article class="question-card" data-search="2.2 一个关系模式能否没有关键字？为什么？ 一个关系模式能否没有关键字？为什么？">
+          <div class="question-no">2.2</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span></div>
+          <h3>一个关系模式能否没有关键字？为什么？</h3><div class="prompt"><div class="prose">一个关系模式能否没有关键字？为什么？</div></div>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">答：不可以没有关键字，因为关键字是元组的唯一标志，如果没有关键字则无法索引元组。</div></div>
+          </div></article><article class="question-card" data-search="2.3 试述关系模型的完整性规则。在参照完整性中，为什么外部关键字属性的值也 试述关系模型的完整性规则。在参照完整性中，为什么外部关键字属性的值也可以为空？什么情况下才可以为空？">
+          <div class="question-no">2.3</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span></div>
+          <h3>试述关系模型的完整性规则。在参照完整性中，为什么外部关键字属性的值也</h3><div class="prompt"><div class="prose">试述关系模型的完整性规则。在参照完整性中，为什么外部关键字属性的值也可以为空？什么情况下才可以为空？</div></div>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">答：实体完整性规则是指若属性A是基本关系R的主属性，则属性A不能取空值。<br><br>若属性(或属性组)F是基本关系R的外码，它与基本关系S的主码Ks相对应(基本关系R和S不一定是不同的关系)，则对于R中每个元组在F上的值必须为：或者取空值(F的每个属性值均为空值)；或者等于S中某个元组的主码值。<br><br>用户自定义完整性规则是针对某一具体数据的约束条件，由具体环境决定，它反映某一具体应用所涉及的数据必须满足的语义要求。<br><br>在参照完整性中，如果属性F不是基本关系R的主属性，则可以取空值，否则不能取空值。</div></div>
+          </div></article><article class="question-card" data-search="2.4 一个n行、m列的二维表（其中没有两行或两列全同），将行或列交换后，能 一个n行、m列的二维表（其中没有两行或两列全同），将行或列交换后，能导出多少个不同的表？">
+          <div class="question-no">2.4</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span></div>
+          <h3>一个n行、m列的二维表（其中没有两行或两列全同），将行或列交换后，能</h3><div class="prompt"><div class="prose">一个n行、m列的二维表（其中没有两行或两列全同），将行或列交换后，能导出多少个不同的表？</div></div>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">答：1个</div></div>
+          </div></article><article class="question-card" data-search="2.5 假定关系R和S分别有n和m个元组，试说明下列运算结果中的最小和最大元 假定关系R和S分别有n和m个元组，试说明下列运算结果中的最小和最大元组个数：
+⑴ EMBED Equation.3 ⑵ EMBED Equation.3
+⑶ EMBED Equation.3 其中c是条件表达式 ⑷ EMBED Equation.3 ，其中L是属性集合">
+          <div class="question-no">2.5</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span></div>
+          <h3>假定关系R和S分别有n和m个元组，试说明下列运算结果中的最小和最大元</h3><div class="prompt"><div class="prose">假定关系R和S分别有n和m个元组，试说明下列运算结果中的最小和最大元组个数：<br>⑴ EMBED Equation.3 ⑵ EMBED Equation.3<br>⑶ EMBED Equation.3 其中c是条件表达式 ⑷ EMBED Equation.3 ，其中L是属性集合</div></div>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">答：<br><br>(1) 最小个数为：取m和n中的小者；最大个数为：m+n<br><br>(2) 最小个数为：0；最大个数为：取m和n中的小者<br><br>(3) 最小个数为：0；最大个数为：m*n<br><br>(4) 最小个数为：0；最大个数为：n</div></div>
+          </div></article><article class="question-card" data-search="2.6 设有关系R和S，如表2-24和表2-25所示： 设有关系R和S，如表2-24和表2-25所示：
+表2-38 关系R 表2-39 关系S
+A
+B
+C
+3
+6
+7
+2
+5
+7
+7
+2
+3
+4
+4
+3
+A
+B
+C
+3
+4
+5
+7
+2
+3
+计算R∪S，R－S，R∩S，R×S，∏3，2（S），σB﹤’5’（R）">
+          <div class="question-no">2.6</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span></div>
+          <h3>设有关系R和S，如表2-24和表2-25所示：</h3><div class="prompt"><div class="prose">设有关系R和S，如表2-24和表2-25所示：<br>表2-38 关系R 表2-39 关系S<br>A<br>B<br>C<br>3<br>6<br>7<br>2<br>5<br>7<br>7<br>2<br>3<br>4<br>4<br>3<br>A<br>B<br>C<br>3<br>4<br>5<br>7<br>2<br>3<br>计算R∪S，R－S，R∩S，R×S，∏3，2（S），σB﹤’5’（R）</div></div>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">答：<br><br>R∪S<br><br>A<br><br>B<br><br>C<br><br>3<br><br>6<br><br>7<br><br>2<br><br>5<br><br>7<br><br>7<br><br>2<br><br>3<br><br>4<br><br>4<br><br>3<br><br>3<br><br>4<br><br>5<br><br>R－S<br><br>A<br><br>B<br><br>C<br><br>3<br><br>6<br><br>7<br><br>2<br><br>5<br><br>7<br><br>4<br><br>4<br><br>3<br><br>R∩S<br><br>A<br><br>B<br><br>C<br><br>7<br><br>2<br><br>3<br><br>R×S<br><br>R.A<br><br>R.B<br><br>R.C<br><br>S.A<br><br>S.B<br><br>S.C<br><br>3<br><br>6<br><br>7<br><br>3<br><br>4<br><br>5<br><br>3<br><br>6<br><br>7<br><br>7<br><br>2<br><br>3<br><br>2<br><br>5<br><br>7<br><br>3<br><br>4<br><br>5<br><br>2<br><br>5<br><br>7<br><br>7<br><br>2<br><br>3<br><br>7<br><br>2<br><br>3<br><br>3<br><br>4<br><br>5<br><br>7<br><br>2<br><br>3<br><br>7<br><br>2<br><br>3<br><br>4<br><br>4<br><br>3<br><br>3<br><br>4<br><br>5<br><br>4<br><br>4<br><br>3<br><br>7<br><br>2<br><br>3<br><br>∏3，2（S）<br><br>B<br><br>C<br><br>4<br><br>5<br><br>2<br><br>3<br><br>σB﹤’5’（R）<br><br>A<br><br>B<br><br>C<br><br>7<br><br>2<br><br>3<br><br>4<br><br>4<br><br>3</div></div>
+          </div></article><article class="question-card" data-search="2.7 如果R是二元关系，那么下面元组表达式的结果是什么？ 如果R是二元关系，那么下面元组表达式的结果是什么？
+{t|( EMBED Equation.3 u)（R(t)∧R(u) ∧(t[1]≠u[1]∨t[2] ≠u[2])）}">
+          <div class="question-no">2.7</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span></div>
+          <h3>如果R是二元关系，那么下面元组表达式的结果是什么？</h3><div class="prompt"><div class="prose">如果R是二元关系，那么下面元组表达式的结果是什么？<br>{t|( EMBED Equation.3 u)（R(t)∧R(u) ∧(t[1]≠u[1]∨t[2] ≠u[2])）}</div></div>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">答：R中不重复的元组</div></div>
+          </div></article><article class="question-card" data-search="2.8 假设R和S分别是三元和二元关系，试把表达式∏1，5（σ2=4∨3=4 假设R和S分别是三元和二元关系，试把表达式∏1，5（σ2=4∨3=4（R×S））转换成等价的：
+⑴ 汉语查询句子 ⑵ 元组表达式 ⑶ 域表达式">
+          <div class="question-no">2.8</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span></div>
+          <h3>假设R和S分别是三元和二元关系，试把表达式∏1，5（σ2=4∨3=4</h3><div class="prompt"><div class="prose">假设R和S分别是三元和二元关系，试把表达式∏1，5（σ2=4∨3=4（R×S））转换成等价的：<br>⑴ 汉语查询句子 ⑵ 元组表达式 ⑶ 域表达式</div></div>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">答：（1）求R中的元组与S中的元组串接后,满足R.2=S.1或者R.3= S.1的R.1和S.2。<br><br>（2）∏1,5(σ2=4∨3=4（R×S）) = {t| (∃u) (∃v)(R(u) ∧ S(v) ∧t[1]=u[1] ∧ t[2]=v[2] ∧ (t[2]=v[1] ∨ t[3]=v[1]))}<br><br>（3）略</div></div>
+          </div></article><article class="question-card" data-search="2.9 假设R和S都是二元关系，试把元组表达式{t| R(t) ∧( EMB 假设R和S都是二元关系，试把元组表达式{t| R(t) ∧( EMBED Equation.3 u)（S(u) ∧u[1] ≠t[2]）}}转换为等价的：
+⑴ 汉语查询句子 ⑵ 关系代数表达式 ⑶ 域表达式">
+          <div class="question-no">2.9</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span></div>
+          <h3>假设R和S都是二元关系，试把元组表达式{t| R(t) ∧( EMB</h3><div class="prompt"><div class="prose">假设R和S都是二元关系，试把元组表达式{t| R(t) ∧( EMBED Equation.3 u)（S(u) ∧u[1] ≠t[2]）}}转换为等价的：<br>⑴ 汉语查询句子 ⑵ 关系代数表达式 ⑶ 域表达式</div></div>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">答：（1）找出那些满足S.1≠R.2条件的R中的元组。<br><br>（2）σ S.1≠R.2（R）<br><br>（3）略</div></div>
+          </div></article><article class="question-card" data-search="2.10 设数据库中有四个基本表： 设数据库中有四个基本表：
+部门 Dept（D#(部门号)，DName（部门名称），DTel（电话号码），DMan（经理工号））
+职工 EMP（E#（职工号），EName（姓名)，ESex（性别），EPost（职务），D#(部门号)）
+工程 PRO（P#（项目号），PName（项目名称），PBud（经费预算））
+施工 EP（E#（职工号），P#（项目号），WH（工时））
+（1）写出每个表的主码和外码。
+（2）用关系代数表达式写出职务为“工程师”的姓名和部门名称。
+（3）用关系代数表达式写出姓名为“潘小光”的职工所在的部门名称和所参与的项目名称。">
+          <div class="question-no">2.10</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span></div>
+          <h3>设数据库中有四个基本表：</h3><div class="prompt"><div class="prose">设数据库中有四个基本表：<br>部门 Dept（D#(部门号)，DName（部门名称），DTel（电话号码），DMan（经理工号））<br>职工 EMP（E#（职工号），EName（姓名)，ESex（性别），EPost（职务），D#(部门号)）<br>工程 PRO（P#（项目号），PName（项目名称），PBud（经费预算））<br>施工 EP（E#（职工号），P#（项目号），WH（工时））<br>（1）写出每个表的主码和外码。<br>（2）用关系代数表达式写出职务为“工程师”的姓名和部门名称。<br>（3）用关系代数表达式写出姓名为“潘小光”的职工所在的部门名称和所参与的项目名称。</div></div>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">答：<br><br>（1）关系DEPT，主码是D#<br><br>关系EMP，主码是E#，外码是D#<br><br>关系PRO，主码是P#<br><br>关系EP，主码包含 E#和 P#两个属性，外码分别是 E#和 P#<br><br>（2）∏EName, DName(σEPost=”工程师”(Dept EMP))<br><br>（3）∏PName, DName(σEName =” 潘小光”(Dept EMP PRO EP))</div></div>
+          </div></article><article class="question-card" data-search="2.11 设数据库中有三个基本表： 设数据库中有三个基本表：
+S（SNo(学号)，SName(姓名)，SSex(性别)，SPro(专业方向)）
+SC（SNo(学号)，CNo(课程号)，Grade(成绩)）
+C（CNo(课程号)，CName(课程名)，CPre(先行课)，CCredit(学分)）
+试用关系代数表达式表示下列查询语句：
+（1）找出选修网络方向女同学名单
+（2）求选修15164课程的学生姓名和专业方向
+（3）求选修数据库原理与应用课程的学生姓名
+（4）同时选修人工智能及编译技术的学生名单
+（5）没有被任何人选修的课程名
+（6）没有选修任何课程的学生性别和姓名
+（7）至少选修了002号学生选修的全部课程的学生学号
+（8）求所有课程被选修的情况，列出课程号、课程名、先行课、学分、学号和成绩
+（9）求每个学生没有选修的课程，列出学号、课程号">
+          <div class="question-no">2.11</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span></div>
+          <h3>设数据库中有三个基本表：</h3><div class="prompt"><div class="prose">设数据库中有三个基本表：<br>S（SNo(学号)，SName(姓名)，SSex(性别)，SPro(专业方向)）<br>SC（SNo(学号)，CNo(课程号)，Grade(成绩)）<br>C（CNo(课程号)，CName(课程名)，CPre(先行课)，CCredit(学分)）<br>试用关系代数表达式表示下列查询语句：<br>（1）找出选修网络方向女同学名单<br>（2）求选修15164课程的学生姓名和专业方向<br>（3）求选修数据库原理与应用课程的学生姓名<br>（4）同时选修人工智能及编译技术的学生名单<br>（5）没有被任何人选修的课程名<br>（6）没有选修任何课程的学生性别和姓名<br>（7）至少选修了002号学生选修的全部课程的学生学号<br>（8）求所有课程被选修的情况，列出课程号、课程名、先行课、学分、学号和成绩<br>（9）求每个学生没有选修的课程，列出学号、课程号</div></div>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">答：<br><br>（1）σSPro =”网络”∧ SSex =”女”(S)<br><br>（2）∏SName, SPro(σCNo=”15164”(S SC))<br><br>（3）∏SName(σCName=”数据库原理与应用”(C) SC S)<br><br>（4）S (∏SNo, CNo(SC)÷∏CNo(σCName =”人工智能”∨ CName=”编译技术”(C)))<br><br>（5）∏CName(C (∏CNo(C) -∏CNo(SC)))<br><br>（6）∏SName, SSex(S (∏SNo(S) -∏SNo(SC)))<br><br>（7）∏SNo, CNo(SC)÷∏CNo(σSno=”002”(SC))<br><br>（8）CSC<br><br>（9）∏SNo, Cno(S×SC) -∏SNo, Cno(SC)</div></div>
+          </div></article><article class="question-card" data-search="2.12 为什么要对关系代数表达式进行优化？ 为什么要对关系代数表达式进行优化？">
+          <div class="question-no">2.12</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span></div>
+          <h3>为什么要对关系代数表达式进行优化？</h3><div class="prompt"><div class="prose">为什么要对关系代数表达式进行优化？</div></div>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">答：对于同一个查询语句，可以用不同的关系代数表达，但是它们之间的效率却可能相差很大, 选择不同的关系代数运算顺序，就会得到不同的查询效率，因此，需要变换规则对关系代数表达式进行等价变换，从而将同一查询请求转换为效率最高的关系代数表达式。</div></div>
+          </div></article><article class="question-card" data-search="2.13 在2.11中的三个关系中，用户有一个查询语句：检索网络方向的学生选修 在2.11中的三个关系中，用户有一个查询语句：检索网络方向的学生选修先行课为计算机网络的课程名和课程学分。
+⑴ 写出该查询的关系代数表达式.
+⑵ 写出该查询优化的关系代数表达式。
+⑶ 画出该查询初始的关系代数表达式的语法树。
+⑷ 使用本章中介绍的优化算法，对语法树进行优化，并画出优化后的语法树。">
+          <div class="question-no">2.13</div><div class="question-main">
+          <div class="tags"><span>教材课后习题</span></div>
+          <h3>在2.11中的三个关系中，用户有一个查询语句：检索网络方向的学生选修</h3><div class="prompt"><div class="prose">在2.11中的三个关系中，用户有一个查询语句：检索网络方向的学生选修先行课为计算机网络的课程名和课程学分。<br>⑴ 写出该查询的关系代数表达式.<br>⑵ 写出该查询优化的关系代数表达式。<br>⑶ 画出该查询初始的关系代数表达式的语法树。<br>⑷ 使用本章中介绍的优化算法，对语法树进行优化，并画出优化后的语法树。</div></div>
+          <button class="answer-toggle" type="button" aria-expanded="false"><span class="symbol">＋</span><span class="label">查看参考答案</span><span>↓</span></button>
+          <div class="answer" hidden><div class="answer-head"><strong>参考答案</strong><span>依据课程配套文档整理</span></div><div class="prose">答：<br><br>（1）∏Cname, CCredit(σSPro =”网络”∧ CPre =”计算机网络” ∧ S.SNo=SC.SNo∧SC.CNo=C.CNo(S×SC×C))<br><br>（2）∏Cname, CCredit( (∏SNo(σSPro =”网络”(S)) ∏SNo,CNo (SC) (∏CNo,CName,CCredit (σCPre =”计算机网络”(C))))<br><br>（3）<br><br>（4）<br><br>C<br><br>×<br><br>S<br><br>SC<br><br>ΠCname,CCredit<br><br>σSPro=“网络” ∧ CPre=“计算机网络” ∧ S.SNo=SC.SNo ∧ SC.CNo=C.CNo<br><br>×<br><br>×<br><br>C<br><br>SC<br><br>S<br><br>ΠCname,CCredit<br><br>σSC.CNo=C.CNo<br><br>C<br><br>σCPre=“计算机网络”<br><br>σS.SNo=SC.SNo<br><br>ΠCNo,CName,CCredit<br><br>×<br><br>ΠSNo,CNo<br><br>S<br><br>SC<br><br>ΠSNo<br><br>σSPro=“网络”<br><br>×</div></div>
+          </div></article></div></main>
+        <section class="advice"><span>学习建议</span><h2>先作答，再核对。</h2><p>参考答案用于理解思路与检查结果；遇到题干待补充的题目，请结合教材原题使用。</p><a href="#">回到顶部 ↑</a></section>
+        <footer><strong>张明月《数据库原理与应用》</strong><span>第2章 · 关系模型与关系代数</span><a href="https://mingyue-z.github.io/">返回个人主页 ↗</a></footer></body></html>
