@@ -117,6 +117,7 @@ const englishTranslations = {
   "本科生": "Undergraduate",
   "硕博研究生": "Graduate",
   "Python 程序设计": "Python Programming",
+  "进入课程题库": "Open Exercise Bank",
   "数据库原理与应用": "Database Principles and Applications",
   "数据库基础、Java 程序设计动态网页制作": "Database Fundamentals, Java Programming, and Dynamic Web Development",
   "数字营销": "Digital Marketing",

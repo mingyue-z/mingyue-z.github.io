@@ -649,6 +649,34 @@ p {
   letter-spacing: 0.01em;
 }
 
+.course-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+}
+
+.exercise-bank-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 32px;
+  padding: 0.3rem 0.78rem;
+  border-radius: 999px;
+  background: var(--ink-blue);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.exercise-bank-button:hover,
+.exercise-bank-button:focus-visible {
+  background: var(--accent-deep);
+  transform: translateY(-2px);
+}
+
 .audience-undergrad .audience-badge {
   background: rgba(23, 56, 77, 0.1);
   color: var(--ink-blue);
